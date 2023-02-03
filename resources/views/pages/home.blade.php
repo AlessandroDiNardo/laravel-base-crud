@@ -10,6 +10,7 @@
     <ul>
         @foreach ($saints as $saint)
             <li>
+                <a href="{{ route('saint.destroy', ['id' => $saint -> id]) }}">ELIMINA</a>
                 <span>Nome: <h3> {{$saint -> nome }}</h3></span>
                 <span>Luogo Di Nascita: <h3> {{$saint -> luogo_di_nascita}}</h3></span>
                 <span>Data di Benedizione: <h3> {{$saint -> data_benedizione}}</h3></span>
